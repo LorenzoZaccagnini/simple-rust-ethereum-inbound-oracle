@@ -1,0 +1,12 @@
+[package]
+name = "simple-rust-ethereum-inbound-oracle"
+version = "0.1.0"
+edition = "2021"
+authors = ["Lorenzo Zaccagnini"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+web3 = "0.17.0"
+tokio = { version= "1", features = ["full"] }
+dotenv = "0.15.0"
