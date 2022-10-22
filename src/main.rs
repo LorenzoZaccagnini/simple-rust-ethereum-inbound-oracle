@@ -27,8 +27,6 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     transfer_listen
         .for_each(|log| {
-            //println!("log: {:?}", log);
-            //decode event token id data
             let id = format!("{:?}", log.unwrap().topics[3]);
             println!("id NOT decoded: {:?}", id);
             let id_decoded = U256::from_str_radix(&id[2..], 16).unwrap();
